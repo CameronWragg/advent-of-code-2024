@@ -12,6 +12,7 @@ python = "^3.12"
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.8.1"
 pre-commit = "^4.0.1"
+pyright = "^1.1.389"
 
 [build-system]
 requires = ["poetry-core"]
@@ -47,3 +48,7 @@ force-single-line = true
 lines-between-types = 1
 lines-after-imports = 2
 known-first-party = ["src"]
+
+[tool.pyright]
+include = ["src"]
+strict = ["src"]
