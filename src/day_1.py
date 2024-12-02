@@ -14,8 +14,8 @@ def part_1(input: list[int]) -> int:
 
 
 def part_2(input: list[int]) -> int:
-    right_counter = Counter(input[1::2])
-    return sum([l_element * right_counter[l_element] for l_element in input[::2]])
+    r_counter = Counter(input[1::2])
+    return sum([l_element * r_counter[l_element] for l_element in input[::2]])
 
 
 if __name__ == "__main__":
