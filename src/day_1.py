@@ -3,7 +3,7 @@ from re import split
 from common.input import read_to_string
 
 
-def part_1():
+def part_1() -> int:
     input = split(r"   |\n", read_to_string("src/data/day_1"))
     return sum(
         [
