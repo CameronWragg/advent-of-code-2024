@@ -7,12 +7,12 @@ license = "GPL-3.0-or-later"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "^3.13"
 
 [tool.poetry.group.dev.dependencies]
-ruff = "^0.8.1"
-pre-commit = "^4.0.1"
-pyright = "^1.1.389"
+ruff = "^0.8"
+pre-commit = "^4.0"
+pyright = "^1.1"
 
 [build-system]
 requires = ["poetry-core"]
@@ -21,25 +21,36 @@ build-backend = "poetry.core.masonry.api"
 [tool.ruff]
 fix = true
 line-length = 100
-target-version = "py312"
+target-version = "py313"
 
 [tool.ruff.lint]
-extend-select = [
-    "B",   # flake8-bugbear
-    "C4",  # flake8-comprehensions
-    "ERA", # flake8-eradicate/eradicate
-    "I",   # isort
-    "N",   # pep8-naming
-    "PIE", # flake8-pie
-    "PGH", # pygrep
-    "RUF", # ruff checks
-    "SIM", # flake8-simplify
-    "T20", # flake8-print
-    "TCH", # flake8-type-checking
-    "TID", # flake8-tidy-imports
-    "UP",  # pyupgrade
+select = [
+    "A",    # flake8-builtins
+    "ARG",  # flake8-unused-arguments
+    "B",    # flake8-bugbear
+    "C4",   # flake8-comprehensions
+    "C90",  # mccabe
+    "COM",  # flake8-commas
+    "DTZ",  # flake8-datetimez
+    "E",    # pycodestyle errors
+    "ERA",  # flake8-eradicate
+    "F",    # pyflakes
+    "I",    # isort
+    "N",    # pep8-naming
+    "PIE",  # flake8-pie
+    "PGH",  # pygrep-hooks
+    "Q",    # flake8-quotes
+    "RET",  # flake8-return
+    "RSE",  # flake8-raise
+    "RUF",  # ruff checks
+    "S",    # flake8-bandit
+    "SIM",  # flake8-simplify
+    "SLF",  # flake8-self
+    "TC",   # flake8-type-checking
+    "TID",  # flake8-tidy-imports
+    "UP",   # pyupgrade
+    "W",    # pycodestyle warnings
 ]
-ignore = ["T201"]
 
 [tool.ruff.lint.flake8-tidy-imports]
 ban-relative-imports = "all"
