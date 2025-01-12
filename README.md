@@ -1,6 +1,6 @@
 # Advent of Code 2024
 https://adventofcode.com/
-
+ 
 # Python
 | Day | Stars | Day | Stars | Day | Stars | Day | Stars | Day | Stars |
 |-----|-------|-----|-------|-----|-------|-----|-------|-----|-------|
